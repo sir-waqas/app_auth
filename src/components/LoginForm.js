@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, TextInput } from 'react-native';
+import { CustomButton, Card, CardSection } from './common';
 
-class LoginForm extends Component {
+export default class LoginForm extends Component {
     render() {
         return (
-            <View />
+            <Card>
+                <CardSection>
+                    <TextInput style={{ height: 20, width: 100 }} />
+                </CardSection>
+                <CardSection>
+                    <TextInput style={{ height: 20, width: 100 }} />
+                </CardSection>
+
+                <CardSection>
+                    <CustomButton>
+                        Log In
+                    </CustomButton>
+                </CardSection>
+            </Card>
         );
     }
-};
-export default LoginForm;
+}
+// export default LoginForm;
