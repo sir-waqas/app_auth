@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 import firebase from '@firebase/app'; // This import should be above the custom components
 import '@firebase/auth';
 
-export default class App extends Component {
+class App extends Component {
     //LifeCycle Method to load items before visuals
     componentWillMount() {
         firebase.initializeApp({
@@ -26,4 +26,4 @@ export default class App extends Component {
         );
     }
 }
-// export default app;
+export default App;
