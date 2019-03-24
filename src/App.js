@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import firebase from '@firebase/app'; // This import should be above the custom components
-import '@firebase/auth';
+import '@firebase/auth'; //We need "npm install --save firebase" to make this work
 
 //Custom Components imports
 import { Header } from './components/common';
 
 class App extends Component {
-    //LifeCycle Method to load items before visuals
+    //LifeCycle Method to Initialize Firebase from WebSetup on Firebase Console
     componentWillMount() {
         firebase.initializeApp({
-            apiKey: 'AIzaSyBsaXqqEioMPhYrSdSrSd3mCwK0sUHUeAc',
+            apiKey: 'AIzaSyBsaXqqEioMPhYrSdSrSd3mCwK0sUHUeAc', //Just need to use single quotes
             authDomain: 'auth-e7ac5.firebaseapp.com',
             databaseURL: 'https://auth-e7ac5.firebaseio.com',
             projectId: 'auth-e7ac5',
