@@ -3,6 +3,9 @@ import { View, Text } from 'react-native';
 import firebase from '@firebase/app'; // This import should be above the custom components
 import '@firebase/auth';
 
+//Custom Components imports
+import { Header } from './components/common';
+
 class App extends Component {
     //LifeCycle Method to load items before visuals
     componentWillMount() {
@@ -19,8 +22,8 @@ class App extends Component {
         return (
             // <View style={{ flex: 1, marginTop: 50 }}>
             <View>
+                <Header headerText="Authentication" />
                 <Text>Something Something</Text>
-                {/* <Header headerText="Authentication" /> */}
                 {/* <LoginForm /> */}
             </View>
         );
