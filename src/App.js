@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import firebase from '@firebase/app'; // This import should be above the custom components
 import '@firebase/auth'; //We need "npm install --save firebase" to make this work
 
 //Custom Components imports
 import { Header } from './components/common';
+import LoginForm from './components/LoginForm';
 
 class App extends Component {
     //LifeCycle Method to Initialize Firebase from WebSetup on Firebase Console
@@ -23,7 +24,7 @@ class App extends Component {
             // <View style={{ flex: 1, marginTop: 50 }}>
             <View>
                 <Header headerText="Authentication" />
-                <Text>Something Something</Text>
+                <LoginForm />
                 {/* <LoginForm /> */}
             </View>
         );
