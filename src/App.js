@@ -8,7 +8,7 @@ import LoginForm from './components/LoginForm';
 
 class App extends Component {
     //State to represent the loggedIn Status for the user
-    state = { loggedIn: null };
+    state = { loggedIn: false };
 
     //LifeCycle Method to Initialize Firebase from WebSetup on Firebase Console
     componentWillMount() {
